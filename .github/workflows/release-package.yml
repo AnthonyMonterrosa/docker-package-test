@@ -13,7 +13,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: 29a84147d4c5f090eab87436937afeca783f66ad
+          password: ${{ secrets.ALL }}
       - uses: docker/build-push-action@v2
         with:
           context: .
